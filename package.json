@@ -29,8 +29,7 @@
   },
   "scripts": {
     "build": "babel-node ./node_modules/typhonjs-npm-scripts-build-babel/scripts/build.js",
-    "prepublish": "babel-node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js",
-    "test": "babel-node ./node_modules/typhonjs-npm-scripts-test-mocha/scripts/test.js"
+    "prepublish": "babel-node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js"
   },
   "keywords": [
     "typhonjs",
