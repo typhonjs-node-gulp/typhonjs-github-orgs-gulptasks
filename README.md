@@ -22,7 +22,7 @@ The following are example entries in `package.json`:
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "typhonjs-github-orgs-gulptasks": "^0.0.4",
+    "typhonjs-github-orgs-gulptasks": "^0.0.5",
     "typhonjs-npm-build-test": "^0.0.9"
   },
 ```
