@@ -62,14 +62,16 @@ export default function(gulp, options)
       throw new TypeError(`githubTransform error: 'options' is not a 'object'.`);
    }
 
-   if (typeof options.inspectOptions !== 'object' && typeof options.inspectOptions.ctor !== 'object')
+   if (typeof options.inspectOptions !== 'object' || typeof options.inspectOptions.ctor !== 'object')
    {
-      throw new TypeError(`githubTransform error: 'options.inspectOptions.ctor' is not a 'object'.`);
+      console.log(`githubTransform warning: 'options.inspectOptions' is not an 'object'.`);
+      return;
    }
 
    if (typeof options.transformOptions !== 'object')
    {
-      throw new TypeError(`githubTransform error: 'options.transformOptions' is not a 'object'.`);
+      console.log(`githubTransform warning: 'options.transformOptions' is not an 'object'.`);
+      return;
    }
 
    const inspectOptions = options.inspectOptions.ctor;
@@ -183,7 +185,6 @@ export default function(gulp, options)
        */
       gulp.task('github-transform-orgs-all', () =>
       {
-console.log('github-transform-orgs-all - allOptions: ' + JSON.stringify(allOptions));
          return inspectTransform.getOrgs(allOptions);
       });
 
