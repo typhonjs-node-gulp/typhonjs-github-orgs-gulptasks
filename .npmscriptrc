@@ -13,6 +13,7 @@
       {
          "scripts":
          [
+            "npm run build",
             "gulp local-test --silent > './test/testdata.txt'",
             "gulp verify-test",
             "rm ./test/testdata.txt"

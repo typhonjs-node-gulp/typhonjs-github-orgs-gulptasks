@@ -11,6 +11,16 @@ try
 }
 catch (err) { /* ... */ }
 
+// The following is useful for testing / inclusion of gulp tasks directly in `typhonjs-github-inspect-orgs-transform`.
+if (typeof GitHubInspectOrgsTransform === 'undefined')
+{
+   try
+   {
+      GitHubInspectOrgsTransform = require(`${process.cwd()}/dist/GitHubInspectOrgsTransform.js`);
+   }
+   catch (err) { /* ... */ }
+}
+
 /**
  * Provides a function to create Gulp tasks for GitHubInspectOrgsTransform.
  *
