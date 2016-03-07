@@ -1,6 +1,7 @@
 .idea
 .DS_Store
 npm-debug.log
+/test/testdata.txt
 token.owner
 token.user
 coverage
