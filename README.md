@@ -80,7 +80,7 @@ gitGulpTasks(gulp,
 });
 ```
 
-The above example Gulp file uses Babel / ES6 which is installed by `typhonjs-npm-build-test`. To configure the GitHub Orgs Gulp tasks a `owner` and `user` GitHub public access token containing `public_repo` and `read:org` permissions is either set as environment variables (useful for Travis CI testing) in `process.env.GITHUB_OWNER_TOKEN` and `process.env.GITHUB_USER_TOKEN` or in local files `./token.owner` and `./token.user`. It should be noted that if storing public access tokens in local files that the given project should include a `.gitignore` file that prevents checking them in as GitHub will invalidate those tokens if they are checked as part of a commit. 
+The above example Gulp file uses Babel / ES6 which is installed by `typhonjs-npm-build-test`. To configure the GitHub Orgs Gulp tasks a `owner` and `user` GitHub public access token containing `public_repo` and `read:org` permissions is either set as environment variables (useful for Travis CI testing) in `process.env.GITHUB_OWNER_TOKEN` and `process.env.GITHUB_USER_TOKEN` or in local files `./token.owner` and `./token.user`. It should be noted that if storing public access tokens in local files that the given project should include a `.gitignore` file that prevents checking them in as GitHub will invalidate those tokens if they are checked in as part of a commit. 
 
 In particular regarding configuration please review:
 ```
