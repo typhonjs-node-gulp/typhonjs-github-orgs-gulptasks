@@ -1,6 +1,6 @@
 {
   "name": "typhonjs-github-orgs-gulptasks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/typhonjs-node-gulp/typhonjs-github-orgs-gulptasks/",
   "description": "Provides GitHub many organization / repos gulp tasks shared by TyphonJS and beyond.",
   "license": "MPL-2.0",
@@ -20,14 +20,16 @@
   "dependencies": {
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-task-listing": "^1.0.1",
-    "typhonjs-config-eslint": "^0.3.0",
+    "eslint": "^2.0.0",
+    "gulp": "^3.9.0",
+    "gulp-task-listing": "^1.0.0",
+    "typhonjs-config-eslint": "^0.4.0",
     "typhonjs-github-inspect-orgs": "^0.0.8",
-    "typhonjs-github-inspect-orgs-transform": "^0.0.3",
-    "typhonjs-npm-build-test": "^0.0.9"
+    "typhonjs-github-inspect-orgs-transform": "^0.0.4",
+    "typhonjs-npm-build-test": "^0.0.10"
   },
   "scripts": {
+    "eslint": "eslint .",
     "build": "babel-node ./node_modules/typhonjs-npm-scripts-build-babel/scripts/build.js",
     "prepublish": "babel-node ./node_modules/typhonjs-npm-scripts-publish/scripts/prepublish.js"
   },
