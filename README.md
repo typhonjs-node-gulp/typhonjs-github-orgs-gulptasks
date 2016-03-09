@@ -106,8 +106,8 @@ The second parameter to `gitGulpTasks` is an options hash that must contains:
 
    (object)       ctor - Constructor options for GitHubInspectOrgsTransform creation.
 
-   (object)       methods - Options passed into GitHubInspectOrgsTransform method invocation. `All` methods
-                            remove `credentials`.
+   (object)       methods - Options passed into GitHubInspectOrgsTransform method invocation. The `all` category of gulp tasks
+                            defined will remove `credentials` entries.
 
    (object)       tasks - Options specific to controlling task creation below:
 
