@@ -12,6 +12,8 @@ try
 catch (err) { /* ... */ }
 
 // The following is useful for testing / inclusion of gulp tasks directly in `typhonjs-github-inspect-orgs-transform`.
+
+/* istanbul ignore if */
 if (typeof GitHubInspectOrgsTransform === 'undefined')
 {
    try
@@ -52,6 +54,7 @@ if (typeof GitHubInspectOrgsTransform === 'undefined')
 export default function(gulp, options)
 {
    // If GitHubInspectOrgs or GitHubInspectOrgsTransform are not required then exit early.
+   /* istanbul ignore if */
    if (typeof GitHubInspectOrgs === 'undefined' || typeof GitHubInspectOrgsTransform === 'undefined')
    {
       console.log('githubTransform warning: Could not import GitHubInspectOrgs or GitHubInspectOrgsTransform');
@@ -62,22 +65,26 @@ export default function(gulp, options)
    GitHubInspectOrgs = GitHubInspectOrgs.default;
    GitHubInspectOrgsTransform = GitHubInspectOrgsTransform.default;
 
+   /* istanbul ignore if */
    if (typeof gulp !== 'object' && typeof gulp.task !== 'function')
    {
       throw new TypeError(`githubTransform error: 'gulp' does not conform to the Gulp API.`);
    }
 
+   /* istanbul ignore if */
    if (typeof options !== 'object')
    {
       throw new TypeError(`githubTransform error: 'options' is not a 'object'.`);
    }
 
+   /* istanbul ignore if */
    if (typeof options.inspectOptions !== 'object' || typeof options.inspectOptions.ctor !== 'object')
    {
       console.log(`githubTransform warning: 'options.inspectOptions' is not an 'object'.`);
       return;
    }
 
+   /* istanbul ignore if */
    if (typeof options.transformOptions !== 'object')
    {
       console.log(`githubTransform warning: 'options.transformOptions' is not an 'object'.`);

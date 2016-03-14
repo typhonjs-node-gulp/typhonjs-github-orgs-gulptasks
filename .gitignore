@@ -4,7 +4,6 @@ npm-debug.log
 /test/testdata.txt
 token.owner
 token.user
-coverage
-dist
-docs
-node_modules
+dist/
+docs/
+node_modules/
