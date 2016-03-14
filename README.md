@@ -2,7 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/typhonjs-github-orgs-gulptasks.svg?label=npm)](https://www.npmjs.com/package/typhonjs-github-orgs-gulptasks)
 [![Code Style](https://img.shields.io/badge/code%20style-allman-yellowgreen.svg?style=flat)](https://en.wikipedia.org/wiki/Indent_style#Allman_style)
-[![License](https://img.shields.io/badge/license-MPLv2-yellowgreen.svg?style=flat)](https://github.com/typhonjs/typhonjs-github-orgs-gulptasks/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MPLv2-yellowgreen.svg?style=flat)](https://github.com/typhonjs-node-gulp/typhonjs-github-orgs-gulptasks/blob/master/LICENSE)
 [![Gitter](https://img.shields.io/gitter/room/typhonjs/TyphonJS.svg)](https://gitter.im/typhonjs/TyphonJS)
 
 [![Build Status](https://travis-ci.org/typhonjs-node-gulp/typhonjs-github-orgs-gulptasks.svg?branch=master)](https://travis-ci.org/typhonjs-node-gulp/typhonjs-github-orgs-gulptasks)
@@ -11,19 +11,19 @@
 Provides GitHub many organization / repos gulp tasks shared by TyphonJS and beyond.
 
 The `transform` Gulp tasks are optional and only load if the following NPM modules are installed:
-- [typhonjs-github-inspect-orgs](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs)
-- [typhonjs-github-inspect-orgs-transform](https://github.com/typhonjs-node-scm/typhonjs-github-inspect-orgs-transform)
+- [typhonjs-github-inspect-orgs](https://www.npmjs.com/package/typhonjs-github-inspect-orgs)
+- [typhonjs-github-inspect-orgs-transform](https://www.npmjs.com/package/typhonjs-github-inspect-orgs-transform)
 
 The following are example entries in `package.json`:
 ```
   "dependencies": {
-    "typhonjs-github-inspect-orgs": "^0.0.9"
-    "typhonjs-github-inspect-orgs-transform": "^0.0.4"
+    "typhonjs-github-inspect-orgs": "^0.1.0"
+    "typhonjs-github-inspect-orgs-transform": "^0.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "typhonjs-github-orgs-gulptasks": "^0.0.5",
-    "typhonjs-npm-build-test": "^0.0.9"
+    "gulp": "^3.0.0",
+    "typhonjs-github-orgs-gulptasks": "^0.1.0",
+    "typhonjs-npm-build-test": "^0.1.0"
   },
 ```
 
