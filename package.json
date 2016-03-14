@@ -1,6 +1,6 @@
 {
   "name": "typhonjs-github-orgs-gulptasks",
-  "version": "0.1.0",
+  "version": "0.0.7",
   "homepage": "https://github.com/typhonjs-node-gulp/typhonjs-github-orgs-gulptasks/",
   "description": "Provides GitHub many organization / repos gulp tasks shared by TyphonJS and beyond.",
   "license": "MPL-2.0",
